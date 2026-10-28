@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Opration</title>
+    <link rel="stylesheet" href="./crud.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <button class="btn-task">Add Task</button>
+
+    <div class="form-sec">
+        <form action="#">
+            <h1>Add Task</h1>
+            <div class="form-control">
+                <label for="">Enter Name</label>
+                <input type="text" id="txtName" placeholder="Enter Name">
+            </div>
+            <div class="form-control">
+                <label for="">Enter Email</label>
+                <input type="email" id="txtEmail" placeholder="example@gmail.com">
+            </div>
+            <div class="form-control">
+                <label for="">Enter Password</label>
+                <input type="password" id="txtPassword" placeholder="Enter Password">
+            </div>
+            <div class="form-control">
+                <label for="">Enter Rank</label>
+                <input type="text" id="txtRank" placeholder="Enter Rank">
+            </div>
+            <div class="form-control-button">
+                <button class="button-cancle">Cancle</button>
+                <button class="button-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <table class="tbl-sec">
+        <caption>Task List</caption>
+        <thead>
+            <tr>
+                <th colspan="0">No.</th>
+                <th colspan="1">Name</th>
+                <th colspan="2">Email</th>
+                <th colspan="2">Password</th>
+                <th colspan="2">Rank</th>
+                <th colspan="1">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="tbl-body">
+           
+        </tbody>
+    </table>
+
+    <div class="form-edit-sec">
+        <form action="#">
+            <h1>Edit Task</h1>
+            <div class="form-control">
+                <label for="">Edit Name</label>
+                <input type="text" id="txtEditName" placeholder="Edit Name">
+            </div>
+            <div class="form-control">
+                <label for="">Edit Email</label>
+                <input type="email" id="txtEditEmail" placeholder="Edit Email">
+            </div>
+            <div class="form-control">
+                <label for="">Edit Password</label>
+                <input type="password" id="txtEditPassword" placeholder="Edit Password">
+            </div>
+            <div class="form-control">
+                <label for="">Edit Rank</label>
+                <input type="text" id="txtEditRank" placeholder="Edit Rank">
+            </div>
+            <div class="form-control-button">
+                <button class="button-save-cancle">Cancle</button>
+                <button class="btn-save">Save Changes</button>
+            </div>
+        </form>
+    </div>
+<div class="toast1">Successfully created task</div>
+<div class="toast2">Failed created task</div>
+<div class="toast3">Successfully edit task</div>
+<div class="toast4">Failed edit task</div>
+<div class="toast5">Successfully delete task</div>
+<div class="toast6">Failed delete task</div>
+<div class="toast-delete">
+    <h1>You want to delete this task?</h1>
+    <div class="btn-toast">
+        <button class="toast-cancle">Cancle</button>
+        <button class="toast-conform">Confirm</button>
+    </div>
+</div>
+    <script src="./crud.js"></script>
+</body>
+</html>

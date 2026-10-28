@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pato Assignment</title>
+  <link rel="stylesheet" href="./pato.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="body-sec">
+    <div class="carousel" id="carousel" role="region" aria-label="Image carousel">
+      <div class="track" id="track">
+        <div class="slide">
+          <img src="./images/slide1-01.jpg.webp" alt="Mountain view">
+          <div class="slide-text">
+            <h2 class="welcome-text">Welcome to</h2>
+            <h1 class="pato-text">PATO PLACE</h1>
+            <button class="btn-slide">LOOK MENU</button>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./images/master-slides-02.jpg.webp" alt="Forest path">
+          <div class="slide-text">
+            <h2 class="welcome-text">Welcome to</h2>
+            <h1 class="pato-text">PATO PLACE</h1>
+            <button class="btn-slide">LOOK MENU</button>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./images/master-slides-01.jpg.webp" alt="Lake sunset">
+          <div class="slide-text">
+            <h2 class="welcome-text">Welcome to</h2>
+            <h1 class="pato-text">PATO PLACE</h1>
+            <button class="btn-slide">LOOK MENU</button>
+          </div>
+        </div>
+
+      </div>
+      <nav class="navbar" id="navbar">
+        <div class="logo">
+          <img src="./images/logo.png.webp" alt="">
+        </div>
+        <div class="nav-links">
+          <li>HOME</li>
+          <li>MENU</li>
+          <li>RESERVATION</li>
+          <li>GALLERY</li>
+          <li>ABOUT</li>
+          <li>BOLG</li>
+          <li>CONTACT</li>
+        </div>
+        <div class="nav-icons">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-grip-lines grip"></i>
+        </div>
+      </nav>
+      <button class="nav-btn prev" id="prevBtn" aria-label="Previous slide">&#10094;</button>
+      <button class="nav-btn next" id="nextBtn" aria-label="Next slide">&#10095;</button>
+
+      <div class="dots" id="dots" aria-hidden="false"></div>
+
+      <div class="sr-only" id="status" aria-live="polite"></div>
+    </div>
+  </div>
+  <div class="story-sec">
+    <div class="story-text">
+      <h2>Italian Restaurant</h2>
+      <h1>WELCOME</h1>
+      <p>Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia,
+        nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
+      <button class="btn-story">OUR STORY <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <div class="story-img">
+      <img src="./images/our-story-01.jpg.webp" alt="">
+    </div>
+  </div>
+
+  <div class="bg-sec">
+    <h2>Discover</h2>
+    <h1>PATO PLACE</h1>
+  </div>
+
+  <div class="card-sec">
+    <div class="card-body">
+      <div class="card-img">
+        <img src="./images/intro-01.jpg.webp" alt="">
+      </div>
+      <div class="card-text">
+        <h2>ROMANTIC RESTAURANT</h2>
+        <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+        <button class="btn-story">LEARN MORE <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-img">
+        <img src="./images/intro-02.jpg.webp" alt="">
+      </div>
+      <div class="card-text">
+        <h2>DELICIOUS FOOD</h2>
+        <p>Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna</p>
+        <button class="btn-story">LEARN MORE <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-img">
+        <img src="./images/intro-04.jpg.webp" alt="">
+      </div>
+      <div class="card-text">
+        <h2>RED WINES YOU LOVE</h2>
+        <p>Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+        <button class="btn-story">LEARN MORE <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-sec">
+    <h2>Discover</h2>
+    <h1>OUR MENU</h1>
+    <div class="menu-card-sec">
+      <div class="card-body-l">
+        <div class="card-img-l">
+          <div class="b">
+            <img src="./images//our-menu-01.jpg.webp" alt="">
+            <div class="card-btn">
+              <button class="btn-p">LUNCH</button>
+            </div>
+          </div>
+          <div class="b">
+            <img src="./images//our-menu-05.jpg.webp" alt="">
+            <div class="card-btn">
+              <button class="btn-p">DINNER</button>
+            </div>
+          </div>
+        </div>
+        <div class="b">
+          <img src="./images/our-menu-13.jpg.webp" alt="">
+          <div class="card-btn">
+              <button class="btn-p">HAPPY HOUR</button>
+            </div>
+        </div>
+      </div>
+      <div class="card-body-r">
+        <div class="card-img-r">
+          <div class="b">
+            <img src="./images/our-menu-08.jpg.webp" alt="">
+            <div class="card-btn">
+              <button class="btn-p">DRINK</button>
+            </div>
+          </div>
+          <div class="b">
+            <img src="./images/our-menu-10.jpg.webp" alt="">
+            <div class="card-btn">
+              <button class="btn-p">STARTERS</button>
+            </div>
+          </div>
+        </div>
+        <div class="b">
+         <img src="./images/our-menu-16.jpg.webp" alt="">
+         <div class="card-btn">
+              <button class="btn-p">DESSERT</button>
+            </div>
+       </div>
+      </div>
+    </div>
+  </div>
+
+<div class="bg-2-sec">
+    <h2>Discover</h2>
+    <h1>OUR VIDEO</h1>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+    <h2 class="h-r">Latest News</h2>
+    <h1 class="h-b">THE BLOG</h1>
+  <div class="card-sec">
+    <div class="card-body">
+      <div class="card-img">
+        <img src="./images/blog-01.jpg.webp" alt="">
+      </div>
+      <div class="card-text">
+        <h2>BEST PLACES FOR WINE</h2>
+        <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+        <button class="btn-story">CONTINUE READING <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-img">
+        <img src="./images/blog-02.jpg.webp" alt="">
+      </div>
+      <div class="card-text">
+        <h2>EGGS AND CHEESE</h2>
+        <p>Duis elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat</p>
+        <button class="btn-story">CONTINUE READING <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-img">
+        <img src="./images/blog-03.jpg.webp" alt="">
+      </div>
+      <div class="card-text">
+        <h2>STYLE WEDDING PARTY</h2>
+        <p>Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+        <button class="btn-story">CONTINUE READING <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+  <script src="./pato.js"></script>
+</body>
+
+</html>

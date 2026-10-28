@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+}
+button{
+    cursor: pointer;
+}
+.btn-task{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.form-sec{
+    width: 500px;
+    margin: auto;
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+    margin-top: 50px;
+}
+
+.form-edit-sec{
+    width: 500px;
+    margin: auto;
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+    margin-top: 50px;
+}
+.form-control{
+    margin: 10px 0px;
+}
+.form-control-button{
+    display: flex;
+    gap: 10px;
+    padding: 10px 0px;
+}
+.button-cancle{
+    width: 50%;
+    background-color: rgb(133, 133, 133);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+}
+.button-submit{
+    width: 50%;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+.btn-save{
+    width: 50%;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+.button-save-cancle{
+    width: 50%;
+    background-color: rgb(133, 133, 133);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+}
+ form h1{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+ }
+label{
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(172, 172, 172);
+    background-color: rgb(239, 239, 239);
+    outline: none;
+    margin-top: 5px;
+}
+
+.toast1,.toast3,.toast5{
+    visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: rgb(8, 203, 8);
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 0px;
+
+}
+.toast2,.toast4,.toast6{
+    visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 0px;
+
+}
+.toast-delete{
+    visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: white;
+  color: red;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 1px solid rgb(219, 219, 219);
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 0px;
+
+}
+.toast-delete h1{
+    font-size: 1.2rem;
+}
+.btn-toast{
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    padding-top: 20px;
+}
+.toast-conform{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+.toast-cancle{
+    background-color: rgb(133, 133, 133);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+}
+caption{
+    background-color: blue;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+   
+}
+th,td{
+    padding: 10px;
+     border: 1px solid rgb(160, 160, 160);
+}
+tr:nth-child(even){
+    background-color: rgb(220, 220, 220);
+}
+th{
+    font-size: 1.2rem;
+    background-color: blue;
+    color: white;
+}
+.btn-edit{
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-delete{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 5px;
+}
