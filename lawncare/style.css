@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.header-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+.font-icons{
+    display: flex;
+    list-style: none;
+    gap: 7px;
+}
+.font-icons li{
+    width: 50px;
+    height: 50px;
+    font-size: small;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.font-icons li:hover{
+    background-color: green;
+    color: white;
+}
+a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+}
+a span{
+    color: green;
+}
+input{
+    outline: none;
+    border: none;
+    background-color: rgb(224, 224, 224);
+    padding: 20px 30px;
+    border-radius: 30px;
+
+}
+.sreach-section{
+    display: flex;
+}
+.sreach-icon{
+    width: 55px;
+    height: 55px;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+nav{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+}
+nav li{
+    list-style: none;
+    font-weight: bold;
+    color: white;
+}
+nav li:hover{
+    text-decoration: underline;
+    text-underline-offset: 30px;
+    color: yellow;
+}
+.hero-section{
+    padding: 120px 100px;
+    background-color: black;
+}
+.hero-section h4{
+    color: yellow;
+}
+.hero-section p{
+    color: gray;
+}
+.hero-section h1{
+    font-size: 60px;
+    padding: 10px 0px;
+    color: white;
+}
+.hero-section button{
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0px;
+    font-size: large;
+}

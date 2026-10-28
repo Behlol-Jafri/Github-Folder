@@ -1,0 +1,40 @@
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    margin: 10px 0;
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    height: 200vh;
+    background-color: aqua;
+    position: relative;
+}
+
+.box1{
+    background-color: brown;
+    z-index: 2;
+}
+
+.box2{
+    background-color: rgb(14, 1, 1);
+}
+
+.box3{
+    background-color: rgb(3, 225, 14);
+    position: fixed;
+    top: 30px;
+    /* right: 50px; */
+    /* bottom: 20px; */
+}
+
+.box4{
+    background-color: pink;
+}
+
+.box-con{
+    height: 200vh;
+    background-color: burlywood;
+}

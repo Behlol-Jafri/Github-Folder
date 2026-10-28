@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card with Read More</title>
+    <style>
+        :root {
+            --bg: #f6f7fb;
+            --card-bg: #ffffff;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+            --radius: 18px;
+            --shadow: 0 10px 25px rgba(0, 0, 0, .08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+            background: radial-gradient(1200px 600px at 80% -10%, #eaf2ff 0%, transparent 60%) var(--bg);
+            color: var(--text);
+            display: grid;
+            place-items: center;
+            min-height: 100dvh;
+        }
+
+        .card {
+            width: min(720px, 95vw);
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 24px;
+            border: 1px solid #edf0f5;
+        }
+
+        .card h2 {
+            margin: 0 0 10px;
+            font-size: 1.5rem;
+            letter-spacing: .2px;
+        }
+
+        .card p {
+            line-height: 1.65;
+            margin: 0 0 12px;
+            color: var(--text);
+        }
+
+        .muted {
+            color: var(--muted);
+        }
+
+        /* Collapsible area */
+        .collapsible {
+            overflow: hidden;
+            transition: max-height .4s ease;
+        }
+
+        /* nice subtle divider before the hidden part */
+        .collapsible::before {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 100%;
+            background: linear-gradient(90deg, transparent, #e9eef6, transparent);
+            margin: 12px 0 16px;
+            opacity: .8;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        button.read-toggle {
+            appearance: none;
+            border: 0;
+            background: var(--accent);
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 999px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform .05s ease, background .2s ease;
+        }
+
+        button.read-toggle:hover {
+            background: var(--accent-hover);
+        }
+
+        button.read-toggle:active {
+            transform: translateY(1px);
+        }
+
+        button {
+            padding: 10px 18px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            background: #2563eb;
+            color: #fff;
+            cursor: pointer;
+            transition: background .2s ease;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        .dropdown {
+            position: absolute;
+            margin-top: 8px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, .12);
+            padding: 8px 0;
+            list-style: none;
+            width: 180px;
+            display: none;
+            animation: fadeIn .2s ease;
+        }
+
+        .dropdown li {
+            padding: 10px 16px;
+            cursor: pointer;
+            transition: background .2s ease;
+        }
+
+        .dropdown li:hover {
+            background: #f3f4f6;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <article class="card" id="readCard">
+        <h2>Read More</h2>
+        <p class="muted">A simple example of a card with expandable content.</p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sint maxime maiores rerum.
+            Eligendi explicabo, vel asperiores omnis consectetur fugiat suscipit totam dicta, odio
+            consequatur aut fugit magni in laboriosam sed sint delectus corrupti cupiditate recusandae,
+            exercitationem at obcaecati unde.
+        </p>
+
+        <div class="collapsible" id="moreContent">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi mollitia soluta explicabo
+                repudiandae perspiciatis, distinctio maxime! Aliquid provident assumenda quisquam illum
+                doloribus quo iste, reprehenderit debitis ea laudantium dignissimos quaerat? Natus, animi
+                placeat labore voluptas sunt debitis quis explicabo consequatur atque ipsum mollitia a ut
+                expedita qui sint ea. Ullam nobis ipsam maxime perferendis impedit. Sed minima eius
+                consequatur error animi quod, beatae consectetur ad assumenda voluptas culpa nisi unde
+                dolorum autem nam fugit quibusdam? Veniam hic quia tenetur quisquam nam repellat magnam
+                sapiente, dolorem voluptas nostrum ipsum, aliquid nesciunt.
+            </p>
+        </div>
+
+        <div class="actions">
+            <button class="read-toggle" id="toggleBtn" aria-expanded="false" aria-controls="moreContent"
+                onclick="showContent()">
+                Read Less
+            </button>
+        </div>
+    </article>
+
+    <div class="dropdown-container">
+        <button id="dropdownBtn">Show DropDown</button>
+        <ul class="dropdown" id="dropdownMenu">
+            <li>Home Page</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>Help</li>
+        </ul>
+    </div>
+    <script src="./redmore.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.logo-img{
+    width: 400px;
+    height: auto;
+}
+.container{
+    background-image: url('/images/bg-img.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+}
+.content{
+    margin: 50px;
+    margin-bottom: 0;
+}
+.content div:first-child{
+    margin-bottom: 250px;
+}
+h2{
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #0000EE;
+
+}
+p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+ul{
+    margin-left: 30px;
+
+}
+li{
+    font-size: 18px;
+    line-height: 1.8;
+}
+h3{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.policy-options{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.policy-options div{
+    width: 47%;
+    border: 1px solid #0000EE;
+}
+.policy-options div:first-child{
+    padding-right: 30px;
+    border-top: none;
+    border-left: none;
+}
+.policy-options div:nth-child(2){
+    padding-left: 30px;
+    border-top: none;
+    border-right: none;
+}
+.policy-options div:nth-child(3){
+    padding-right: 30px;
+    border-left: none;
+    border-bottom: none;
+}
+.policy-options div:nth-child(4){
+    padding-left: 30px;
+    border-right: none;
+    border-bottom: none;
+}
+.policy-budget{
+    display: flex;
+}
+.policy-budget div:first-child{
+    width: 60%;
+}
+.policy-budget div:nth-child(2){
+    margin-top: 90px;
+    margin-left: 50px;
+}
+.budget-img{
+    width: 100%;
+    height: auto;
+}
+.footer{
+    text-align: center;
+    margin-top: 100px;
+}

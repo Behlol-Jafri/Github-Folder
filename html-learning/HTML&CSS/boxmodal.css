@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    
+}
+
+.bg-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/bg_1.jpg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-color {
+    background-color: rgba(0, 0, 0, 0.397);
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10%;
+}
+
+.bg-color p {
+    width: 30%;
+}
+
+.bg-color button {
+    display: none;
+}
+
+.bg-color:hover button {
+    display: block;
+}

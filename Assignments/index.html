@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Hidden-scroll horizontal cards</title>
+<style>
+  /* Layout */
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    margin: 32px;
+    background: #f5f7fb;
+    color: #111;
+  }
+
+  h1 { font-size: 18px; margin-bottom: 12px; }
+
+  /* Scroll container */
+  .cards-viewport {
+    position: relative;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    overflow-x: auto;               /* enable horizontal scrolling */
+    /* -webkit-overflow-scrolling: touch; */
+    /* display: block; */
+    padding: 18px 8px;              /* spacing around cards */
+    box-sizing: border-box;
+    scroll-behavior: smooth;        /* smooth scrolling */
+    /* scroll-snap-type: x mandatory;  snaps to items */
+  }
+
+  /* Hide scrollbar (WebKit, Firefox, IE/Edge) */
+  .cards-viewport::-webkit-scrollbar { display: none; } /* Chrome/Safari */
+  .cards-viewport {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+
+  /* Flex row of cards */
+  .cards {
+    display: flex;
+    gap: 16px;
+    /* align-items: stretch; */
+  }
+
+  .card {
+    flex: 0 0 260px;             /* don't shrink, fixed width */
+    height: 160px;
+    background: white;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 6px 18px rgba(12,20,40,0.06);
+    box-sizing: border-box;
+    scroll-snap-align: center;   /* snapping alignment */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card h3 { margin: 0; font-size: 16px; }
+  .card p { margin: 6px 0 0; font-size: 13px; color: #555; }
+
+  /* Optional: show faint gradient at edges to indicate overflow */
+  /* .fade-left, .fade-right {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 56px;
+  }
+  .fade-left { left: 0; background: linear-gradient(to right, rgba(245,247,251,1), rgba(245,247,251,0)); }
+  .fade-right { right: 0; background: linear-gradient(to left, rgba(245,247,251,1), rgba(245,247,251,0)); } */
+
+  /* Responsive tweak: smaller cards on narrow screens */
+  @media (max-width: 520px) {
+    .card { flex: 0 0 200px; height: 140px; }
+  }
+</style>
+</head>
+<body>
+  <h1>Horizontal cards — hidden scrollbar</h1>
+
+  <div class="cards-viewport" tabindex="0" aria-label="Featured cards">
+    <div class="cards">
+      <div class="card"><h3>Card 1</h3><p>Short description.</p></div>
+      <div class="card"><h3>Card 2</h3><p>Another description.</p></div>
+      <div class="card"><h3>Card 3</h3><p>More content here.</p></div>
+      <div class="card"><h3>Card 4</h3><p>More content here.</p></div>
+      <div class="card"><h3>Card 5</h3><p>More content here.</p></div>
+      <div class="card"><h3>Card 6</h3><p>More content here.</p></div>
+      <div class="card"><h3>Card 7</h3><p>More content here.</p></div>
+    </div>
+  </div>
+
+  <!-- Optional fading edges
+  <div class="fade-left" aria-hidden="true"></div>
+  <div class="fade-right" aria-hidden="true"></div> -->
+
+  <p style="max-width:980px;margin:14px auto;font-size:13px;color:#666">
+    Use mouse/touch to swipe left/right. Scrollbar is hidden but scrolling still works (keyboard focus + arrow keys also scroll).
+  </p>
+</body>
+</html>
